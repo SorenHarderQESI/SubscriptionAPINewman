@@ -13,15 +13,14 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});\r",
-							"\r",
-							"pm.test(\"Body is correct\", function () {\r",
-							"    pm.response.to.have.body(\"true\");\r",
-							"});\r",
-							"\r",
-							"postman.setNextRequest('Subscription');\r",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Body is correct\", function () {",
+							"    pm.response.to.have.body(\"true\");",
+							"});",
+							"",
+							"postman.setNextRequest('Subscription');",
 							""
 						],
 						"type": "text/javascript"
